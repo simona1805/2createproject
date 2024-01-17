@@ -1,0 +1,108 @@
+
+.nav-container{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    padding: 20px;
+    width: 130px;
+    height: 1200px;
+    border-right: 1px ridge rgb(228, 220, 220) ;
+    z-index: 3;
+}
+.nav-container .logo-wrapper{
+    padding-left: 30px;
+    padding-top: 15px;
+}
+.nav-container ul{
+    margin-top: 130px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    row-gap: 110px;
+}
+.nav-container ul li{
+    transform: rotate(-90deg);
+
+}
+li::before {
+    content: '';
+    display: inline-block;
+    width: 4px; 
+    height: 4px; 
+    background-color: transparent;
+    border: 1px solid red;
+    border-radius: 0.5px; 
+    margin-right: 10px; 
+    position: relative
+}
+.text-container h1
+.text-container h2{
+    margin: 0;
+}
+.text-container h1{
+    font-size: 350px;
+    color: #f4f4f4;
+    font-weight: 900;
+    font-family: "Roboto";
+    margin: 300px 290px;
+    opacity: 0.9;
+    position: relative;
+    z-index: 1;
+
+
+}
+.text-container h2{
+    font-size: 190px;
+    color: black;
+    font-weight: 900;
+    font-family: "Roboto";
+    margin: 480px 280px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.heading-p{
+    display: flex;
+    align-items: baseline;
+    position: absolute;
+    z-index: 2;
+    top:40px;
+    left: 15px;
+}
+.heading-p p{
+    font-size: 70px;
+    font-family: "Roboto";
+    color: black;
+    font-weight: 300;
+    margin-left: 200px;
+    margin-top: 280px;
+}
+.heading-p h2,
+.heading-p hr,
+.heading-p p{
+    position: relative;
+}
+.heading-p hr{
+    border:none;
+    background-color: black;
+    height: 2px;
+    width: 150px;
+    margin: 40px -100px;
+}
+.nav-container a {
+    font-family: "Roboto";
+    text-decoration: none;
+    font-weight: 380;
+    color: rgb(41, 37, 37);
+    font-size: 14px;
+    cursor: pointer;
+}
+.nav-container a:hover{
+    color: red;
+    transition: 0.5s;
+}
